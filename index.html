@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is an SEO change adding a keywords metadata-->
+    <meta name="keywords" content="finance, budget">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="pb/reset.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pb/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <div class="menu">
+    <!--This is a semantic HTML change using nav instead of div-->
+    <nav class="menu">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
-    </div>
+    </nav>
 
     <div class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
+        <!--Added a picture
+            Includes Alt attribute, this is an a11y change-->
+        <img class="moneyman" src="https://www.freepik.com/free-vector/cheerful-businessman-with-bills_1104407.htm#page=1&query=money&position=23"
+        alt="Cartoon Man With Money">
     </div>
 
     <div class="container center">
