@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 const budget = require('./budgetData');
 
-app.use('/', express.static('public'));
+app.use(cors());
+
+//Deleted in video
+//app.use('/', express.static('public'));
 
 /*const budget = {
     myBudget: [
@@ -22,9 +26,11 @@ app.use('/', express.static('public'));
     ]
 };*/
 
+/*Deleted in video
+
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
-});
+});*/
 
 app.get('/budget', (req, res) => {
     res.json(budget);
